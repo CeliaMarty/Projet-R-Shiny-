@@ -27,7 +27,7 @@ library(shiny)
             tabPanel("TYPE OF CRIME",
             ),
         mainPanel(
-          img(src = "../www/losangeles.jpeg", alt = "Image"),
+          img(src = "www/losangeles.jpeg", alt = "Image"),
               h3("SOME NUMBERS"),
               valueBoxOutput("maBox"),
               valueBoxOutput("maBox1")
