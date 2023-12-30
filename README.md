@@ -5,7 +5,7 @@ L'application CRIMEPULSE L.A offre une expérience intéractive pour explorer et
 
 ## Comment exécuter l'application
 - Avoir R et R studio sur votre machine
-- Téléchagez l'ensemble du projet depuis le répository : Répository R-Shiny [la documentation de Framasite](https://docs.framasoft.org/fr/grav/) !
+- Téléchagez l'ensemble du projet depuis le [Répository R-Shiny](https://github.com/CeliaMarty/Projet-R-Shiny-) !
 - Ouvrez dans R Studio : app.R
 - Installez les packages nécéssaires en utilisant le script R : packages.R
 - Appuyez sur "Run app" dans le script app.R pour lancer l'application
