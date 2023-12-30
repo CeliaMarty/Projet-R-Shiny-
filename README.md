@@ -1,4 +1,4 @@
-# CRIMEPULSE L.A Shiny App !(/Users/celiamarty/Desktop/R shinny/Projet-R-Shiny-/www/cp-LA.png)
+# CRIMEPULSE L.A Shiny App ![Logo CrimePulse L.A](/Users/celiamarty/Desktop/R shinny/Projet-R-Shiny-/www/cp-LA.png)
 
 ## Introduction
 L'application CRIMEPULSE L.A offre une expérience intéractive pour explorer et comprendre les tendances de criminalité à Los Angeles, de 2020 à 2023.
