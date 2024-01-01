@@ -9,9 +9,10 @@ L'application CRIMEPULSE L.A offre une expérience intéractive pour explorer et
 - Ouvrez dans R Studio : app.R
 - Installez les packages nécéssaires en utilisant le script R : packages.R
 - Appuyez sur "Run app" dans le script app.R pour lancer l'application
+- parler de global ??????
 
 ## Fonctionnalités de l'Application
-### Onglet "Acceuil"
+### Onglet "Accueil"
 Présente une introduction à l'application, affiche quelques chiffres clés et comprend un graphique montrant le nombre de délits par année.
 
 ### Onglet "Victimes"
