@@ -24,4 +24,4 @@ Affiche une carte intéractive qui représente la répartition des crimes ainsi 
 ### Onglet "Type de délit"
 Permet de filter les données par type de délits avec l'affichage d'une table intéractive.
 
-
+## Remarques
