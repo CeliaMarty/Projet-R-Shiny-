@@ -5,7 +5,7 @@ source("/Users/celiamarty/Desktop/R shinny/Projet-R-Shiny-/Packages/Packages.R")
 ui <- navbarPage(
   title = "CRIMEPULSE L.A",
   tabsetPanel(
-    tabPanel("Home",
+    tabPanel("Accueil",
              fluidPage(
                column (4,
                        br(),
@@ -37,7 +37,7 @@ ui <- navbarPage(
                )
              )
     ),
-    tabPanel("Victims",
+    tabPanel("Victimes",
              fluidPage(
                column(6,
                       br(),
@@ -83,10 +83,11 @@ ui <- navbarPage(
                )
              )
     ),
-    tabPanel("Type of crime",
+    tabPanel("Type de délits",
              fluidPage(
-               h3("Type of weapon page"),
-               selectInput("crimeType", "Choisissez un type de crime :", unique(data$Crm.Cd.Desc)),
+               br(),
+               br(),
+               selectInput("crimeType", "Sélectionnez un type de délit :", unique(data$Crm.Cd.Desc)),
                dataTableOutput("table")
              ),
     )
@@ -218,7 +219,19 @@ server <- function(input, output) {
   
   # Rendre la table interactive
   output$table <- renderDataTable({
-    datatable(filtered_data(), options = list(pageLength = 5))
+    datatable(filtered_data(), options = list(pageLength = 5, columns = list(
+      list(title = "Date.Rptd"),
+      list(title = "DATE.OCC"),
+      list(title = "TIME.OCC"),
+      list(title = "AREA.NAME"),
+      list(title = "Crm.Cd.Desc"),
+      list(title = "Vict.Age"),
+      list(title = "Permis.Desc"),
+      list(title = "Weapon.Desc"),
+      list(title = "Status.Desc"),
+      list(title = "LOCATION")
+    )))
+   
   })
 }
 shinyApp(ui = ui, server = server)
