@@ -3,7 +3,7 @@
 ## Introduction
 L'application CRIMEPULSE L.A offre une expérience intéractive pour explorer et comprendre les tendances de criminalité à Los Angeles, de 2020 à 2023.
 
-![Aperçu de l'application](www/aperçu.png)
+![Aperçu de l'application](www/apercu.png)
 
 ## Comment exécuter l'application
 - Avoir R et R studio sur votre machine
