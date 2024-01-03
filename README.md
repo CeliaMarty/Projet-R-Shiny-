@@ -26,7 +26,7 @@ Présente une introduction à l'application, affiche quelques chiffres clés et 
 Permet de visualiser la répartition des délits en fonction du sexe et de l'âge des victimes pour une année séléctionnée.
 
 ### Onglet "Localisation"
-Affiche une carte intéractive qui représente la répartition des crimes ainsi que leur type par quartiers uniquement en 2023.
+Affiche une carte intéractive qui représente la répartition des délits ainsi que leur type par quartiers (uniquement en 2023).
 
 ### Onglet "Type de délit"
 Permet de filter les données par type de délits avec l'affichage d'une table intéractive.
