@@ -1,70 +1,80 @@
-source("/Users/celiamarty/Desktop/R shinny/Projet-R-Shiny-/Global/global.R")
-source("/Users/celiamarty/Desktop/R shinny/Projet-R-Shiny-/Packages/Packages.R")
+#Inclusions des scripts R :
+source("/Users/celiamarty/Desktop/R shinny/Projet-R-Shiny-/global.R")
+source("/Users/celiamarty/Desktop/R shinny/Projet-R-Shiny-/Packages.R")
 
 #Interface utilisateur    
 ui <- navbarPage(
-  title = "CRIMEPULSE L.A",
+  title = "CRIMEPULSE L.A", # Titre de la page
   tabsetPanel(
+    # Onglet Accueil
     tabPanel("Accueil",
              fluidPage(
+               # Colonne 1
                column (4,
                        br(),
                        br(),
                        br(),
-                       tags$img(src = "cp-LA.png", width = 120, height = 120),
+                       tags$img(src = "cp-LA.png", width = 120, height = 120), #Image
                        br(),
                        br(),
                        br(),
                        br(),
-                       p("Bienvenue sur l'application CRIMEPULSE L.A !"),
+                       p("Bienvenue sur l'application CRIMEPULSE L.A !"), # Texte
                        br(),
                        p("Votre source d'information interactive sur la criminalité à Los Angeles."),
                        p("Explorez les tendances de la criminalité et les statistiques annuelles pour mieux comprendre la sécurité dans cette ville. Notre plateforme vous offre une expérience immersive avec des cartes et des visualisations de données intéractives. Que vous soyez un résident local, un professionnel de la sécurité publique ou un passionné de données, CrimePulse L.A vous fournit les outils nécessaires pour explorer et comprendre les réalités de la criminalité à Los Angeles."),
                ),
+               # Colonne2
                column (4,
-                       h3("Quelques chiffres"),
+                       h3("Quelques chiffres"), #Titre colonne
                        br(),
                        br(),
-                       valueBoxOutput("maBox2"),
+                       valueBoxOutput("maBox2"), #Boites de valeur 
                        valueBoxOutput("maBox3"),
                        valueBoxOutput("maBox4")
                ),
+               # Colonne 3
                column (4,
-                       h3("Nombre de délits par an"),
+                       h3("Nombre de délits par an"), # Titre colonne
                        br(),
                        br(),
-                       plotOutput("crimeBarPlot")
+                       plotOutput("crimeBarPlot") # Plot du nombre de délits par an
                )
              )
     ),
+    # Onglet Victimes
     tabPanel("Victimes",
              fluidPage(
+               # Colonne 1
                column(6,
                       br(),
                       br(),
                       selectInput("Choix","Sélectionnez une année pour afficher la répartition des victimes selon leur sexe pour l'année choisie",
-                                  c("2020","2021","2022","2023")),
+                                  c("2020","2021","2022","2023")), # Menu déroulant
                       br(),
                       br(),
                       br(),
                       br(),
-                      plotOutput("crimeBarPlotSexe")
+                      plotOutput("crimeBarPlotSexe") #Plot de la répartion du nombre de délits en fonction du sexe de la victime et de l'année
                ),
+               # Colonne 2
                column(6,
                       br(),
                       br(),
                       selectInput("Choix2","Sélectionnez une année pour afficher la répartition des victimes selon leur âge pour l'année choisie",
-                                  c("2020","2021","2022","2023")),
+                                  c("2020","2021","2022","2023")), # Menu déroulant
                       br(),
                       br(),
                       br(),
                       br(),
-                      plotOutput("Victim_age")
+                      plotOutput("Victim_age") #Plot de la répartion du nombre de délits en fonction de l'âge de la victime et de l'année
                )
                
              )
     ),
+    # Onglet Localisation
     tabPanel("Localisation",
+             # Colonne 1
              fluidPage(
                column(6,
                       br(),
@@ -73,30 +83,33 @@ ui <- navbarPage(
                                    choices = c("Southwest", "Central", "N Hollywood
 ","Mission","Devonshire","Northeast","Harbor","Van Nuys","West Valley
 ","West LA","Wilshire","Pacific","Rampart","77th Street","Topanga","Foothill","Hollenbeck","Hollywood","Newton","Olympic","Southeast"))
-               ),
+               ),# Boutons radio
+               # Colonne 2
                column(6,
                       br(),
                       br(),
                       br(),
                       br(),
-                      leafletOutput("map")
+                      leafletOutput("map") # Carte Leaflet
                )
              )
     ),
+    # Onglet Type de délits
     tabPanel("Type de délits",
              fluidPage(
                br(),
                br(),
                selectInput("crimeType", "Sélectionnez un type de délit :", unique(data$Crm.Cd.Desc)),
-               dataTableOutput("table")
+               dataTableOutput("table") # Tableau de données
              ),
     )
   )
 )
+#Définition du server Shiny
 server <- function(input, output) {
   
   
-  
+#Mises à jour des sorties dynamiques :  
   # Mettre à jour la valeur de la boîte pour le nombre de délits en 2023
   output$maBox2 <- renderValueBox({
     valueBox(nrow(data_2023), "Nombre de délits total en 2023",
@@ -234,4 +247,5 @@ server <- function(input, output) {
    
   })
 }
+#Lancer l'application Shiny
 shinyApp(ui = ui, server = server)

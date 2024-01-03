@@ -34,23 +34,23 @@ data <- data %>%
 # Convertir la colonne de dates en format de date pour ensuite filtrer les données par années
 data$DATE.OCC <- as.Date(data$DATE.OCC, format = "%m/%d/%Y")
 
-#Filtrer les données pour l'année 2020
+#Filtrer les données pour l'année 2020 et les stocker dans une variable
 data_2020 <- data %>%
   filter(year(DATE.OCC) == 2020)
 
-#Filtrer les données pour l'année 2021
+#Filtrer les données pour l'année 2021 et les stocker dans une variable
 data_2021 <- data %>%
   filter(year(DATE.OCC) == 2021)
 
-# Filtrer les données pour l'année 2022
+# Filtrer les données pour l'année 2022 et les stocker dans une variable
 data_2022 <- data %>%
   filter(year(DATE.OCC) == 2022)
 
-# Filtrer les données pour l'année 2023
+# Filtrer les données pour l'année 2023 et les stocker dans une variable
 data_2023 <- data %>%
   filter(year(DATE.OCC) == 2023)
 
-# Affichage des données
+# Affichage des données 
 cat("Nombre de délits en 2020:", nrow(data_2020),"/n")
 cat("Nombre de délits en 2021:", nrow(data_2021), "\n")
 cat("Nombre de délits en 2022:", nrow(data_2022), "\n")
@@ -84,7 +84,6 @@ average_crimes_per_month_2023 <- data_2023 %>%
 print(average_crimes_per_month_2023)
 
 # Calcul de la moyenne de délits par jour en 2023
-
 average_crimes_per_day_2023 <- data_2023 %>%
   mutate(Day = day(as.Date(DATE.OCC, format = "%m/%d/%Y"))) %>%
   group_by(Day) %>%
