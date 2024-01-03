@@ -8,8 +8,8 @@ L'application CRIMEPULSE L.A offre une expérience intéractive pour explorer et
 - Téléchagez l'ensemble du projet depuis le [Répository R-Shiny](https://github.com/CeliaMarty/Projet-R-Shiny-)
 - Ouvrez dans R Studio : app.R
 - Installez les packages nécéssaires en utilisant le script R : packages.R
+- Lancer le script : global.R
 - Appuyez sur "Run app" dans le script app.R pour lancer l'application
-- parler de global ??????
 
 ## Fonctionnalités de l'Application
 ### Onglet "Accueil"
