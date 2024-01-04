@@ -28,7 +28,11 @@ Cet onglet présente une introduction à l'application, affiche quelques chiffre
 Sélectionnez une année dans les deux menus déroulants et visualisez la répartition des délits en fonction du sexe et de l'âge des victimes pour l'année en question.
 
 ### Onglet "Localisation"
-Cliquez sur un quartier puis sur la carte intéractive vous aurez la représentation de la répartition des délits ainsi que leur type. Cet onglet est sur les données de 2023.
+Cliquez sur un quartier puis sur la carte intéractive vous aurez la représentation de la répartition des délits ainsi que leur type.
 
 ### Onglet "Type de délit"
-Permet de filter les données par type de délits avec l'affichage d'une table intéractive.
+Dans le menu déroulant sélectionnez un type de délit et dans la table intéractive regardez les informations pour chaque délit.
+
+## Remarques 
+- Dans l'onglet "Localisation" vous aurez uniquement les données de 2023 car sinon la carte serait trop surchargée.
+- Dans l'onglet "Type de délit" vous pouvez filtrer par type de délits dans le menu déroulant mais également par année , par lieu... grâce à la barre de recherche située à droite au dessus de la table. 
