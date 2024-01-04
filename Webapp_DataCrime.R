@@ -84,7 +84,7 @@ ui <- navbarPage(
                                    choices = c("Southwest", "Central", "N Hollywood
 ","Mission","Devonshire","Northeast","Harbor","Van Nuys","West Valley
 ","West LA","Wilshire","Pacific","Rampart","77th Street","Topanga","Foothill","Hollenbeck","Hollywood","Newton","Olympic","Southeast"))
-               ),# Boutons radio
+               ),# Boutons radio pour chaque quartier
                # Colonne 2
                column(6,
                       br(),
