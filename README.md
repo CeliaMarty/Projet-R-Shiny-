@@ -34,5 +34,5 @@ Cliquez sur un quartier puis sur la carte intéractive vous aurez la représenta
 Dans le menu déroulant sélectionnez un type de délit et dans la table intéractive regardez les informations pour chaque délit.
 
 ## Remarques 
-- Dans l'onglet "Localisation" vous aurez uniquement les données de 2023 car sinon la carte serait trop surchargée.
-- Dans l'onglet "Type de délit" vous pouvez filtrer par type de délits dans le menu déroulant mais également par année , par lieu... grâce à la barre de recherche située à droite au dessus de la table. 
+- Dans l'onglet "Localisation" vous aurez uniquement les données de 2023 car sinon la carte serait trop surchargée et illisible.
+- Dans l'onglet "Type de délit" vous pouvez filtrer par type de délits dans le menu déroulant mais également par année , par lieu... grâce à la barre de recherche située à droite au dessus de la table.
