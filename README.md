@@ -22,13 +22,13 @@ Voici un aperçu de l'application :
 ## Fonctionnalités de l'Application
 
 ### Onglet "Accueil"
-Présente une introduction à l'application, affiche quelques chiffres clés et comprend un graphique montrant le nombre de délits par année.
+Cet onglet présente une introduction à l'application, affiche quelques chiffres clés et comprend un graphique montrant le nombre de délits par année.
 
 ### Onglet "Victimes"
-Permet de visualiser la répartition des délits en fonction du sexe et de l'âge des victimes pour une année séléctionnée.
+Sélectionnez une année dans les deux menus déroulants et visualisez la répartition des délits en fonction du sexe et de l'âge des victimes pour l'année en question.
 
 ### Onglet "Localisation"
-Affiche une carte intéractive qui représente la répartition des délits ainsi que leur type par quartiers (uniquement en 2023).
+Cliquez sur un quartier puis sur la carte intéractive vous aurez la représentation de la répartition des délits ainsi que leur type. Cet onglet est sur les données de 2023.
 
 ### Onglet "Type de délit"
 Permet de filter les données par type de délits avec l'affichage d'une table intéractive.
