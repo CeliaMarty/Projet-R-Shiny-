@@ -1,6 +1,7 @@
 #Inclusions des scripts R :
-source = "global.R"
-source = "Packages.R"
+source(file= "/Users/celiamarty/Desktop/R shinny/Projet-R-Shiny-/Packages.R")
+source(file= "/Users/celiamarty/Desktop/R shinny/Projet-R-Shiny-/global.R")
+
 
 #Interface utilisateur    
 ui <- navbarPage(
