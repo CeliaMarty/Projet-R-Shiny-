@@ -10,12 +10,12 @@ Voici un aperçu de l'application :
 
 ## Comment exécuter l'application
 - Avoir R et R studio sur votre machine
-- Téléchargez l'ensemble du projet depuis le [Répository R-Shiny](https://github.com/CeliaMarty/Projet-R-Shiny-)
-- Téléchargez le jeu de données via ce lien [Crime-Data](https://data.lacity.org/Public-Safety/Crime-Data-from-2020-to-Present/2nrs-mtv8/about_data)
+- Télécharger l'ensemble du projet depuis le [Répository R-Shiny](https://github.com/CeliaMarty/Projet-R-Shiny-)
+- Télécharger le jeu de données via ce lien [Crime-Data](https://data.lacity.org/Public-Safety/Crime-Data-from-2020-to-Present/2nrs-mtv8/about_data)
 - Mettre le fichier dans un dossier DATA que vous créez
-- Ouvrez global.R, packages.R et Webapp_DataCrime.R
-- Modifiez les chemins (1 sur global.R avec l'endroit où est placé le jeu de donées et 2 sur Webapp_DataCrime.R avec l'endroit où est placé le fichier packages et pareil pour le fichier global)
-- Allez sur Webapp_DataCrime.R et appuyez sur Run App pour lancer l'application. 
+- Ouvrir global.R, packages.R et Webapp_DataCrime.R
+- Modifier les chemins (1 sur global.R avec l'endroit où est placé le jeu de donées et 2 sur Webapp_DataCrime.R avec l'endroit où est placé le fichier packages et de même pour le fichier global)
+- Aller sur Webapp_DataCrime.R et appuyez sur Run App pour lancer l'application. 
   
 
 ## Fonctionnalités de l'Application
