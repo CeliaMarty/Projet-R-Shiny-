@@ -11,6 +11,7 @@ Voici un aperçu de l'application :
 ## Comment éxécuter l'application
 - Avoir R et R studio sur votre machine
 - Téléchagez l'ensemble du projet depuis le [Répository R-Shiny](https://github.com/CeliaMarty/Projet-R-Shiny-)
+- Téléchargez le jeu de données via ce lien [Crime-Data](https://data.lacity.org/Public-Safety/Crime-Data-from-2020-to-Present/2nrs-mtv8/about_data)
 - Installez les packages nécéssaires en utilisant le script R : packages.R
 - Lancer le script : global.R
 - Ouvrez ensuite le fichier : Webapp_DataCrime.R
