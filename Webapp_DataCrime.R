@@ -1,6 +1,6 @@
 #Inclusions des scripts R :
-source("/Users/celiamarty/Desktop/R shinny/Projet-R-Shiny-/global.R")
-source("/Users/celiamarty/Desktop/R shinny/Projet-R-Shiny-/Packages.R")
+source = "global.R"
+source = "Packages.R"
 
 #Interface utilisateur    
 ui <- navbarPage(
@@ -219,7 +219,7 @@ server <- function(input, output) {
       addMarkers(
         lat = ~LAT,    # Latitude des points
         lng = ~LON,    # Longitude des points
-        popup = ~Crm.Cd.Desc,  # Popup avec la description du crime
+        popup = ~Crm.Cd.Desc,  # Popup avec la description du délit
         clusterOptions = markerClusterOptions()
       )%>%
       setView(lng = filtered_data$LON[1], lat = filtered_data$LAT[1], zoom = 13)
@@ -233,18 +233,17 @@ server <- function(input, output) {
   # Rendre la table interactive
   output$table <- renderDataTable({
     datatable(filtered_data(), options = list(pageLength = 5, columns = list(
-      list(title = "Date.Rptd"),
-      list(title = "DATE.OCC"),
-      list(title = "TIME.OCC"),
-      list(title = "AREA.NAME"),
-      list(title = "Crm.Cd.Desc"),
-      list(title = "Vict.Age"),
-      list(title = "Permis.Desc"),
-      list(title = "Weapon.Desc"),
-      list(title = "Status.Desc"),
-      list(title = "LOCATION")
-    )))
-   
+        list(title = "Date.Rptd"),
+        list(title = "DATE.OCC"),
+        list(title = "TIME.OCC"),
+        list(title = "AREA.NAME"),
+        list(title = "Crm.Cd.Desc"),
+        list(title = "Vict.Age"),
+        list(title = "Permis.Desc"),
+        list(title = "Weapon.Desc"),
+        list(title = "Status.Desc"),
+        list(title = "LOCATION")
+)))
   })
 }
 #Lancer l'application Shiny
