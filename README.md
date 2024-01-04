@@ -8,7 +8,7 @@ Voici un aperçu de l'application :
 <img width="1440" alt="apercu" src="https://github.com/CeliaMarty/Projet-R-Shiny-/assets/152623002/36008021-53c6-4b47-96ca-9f1686ab0da9">
 
 
-## Comment éxécuter l'application
+## Comment exécuter l'application
 - Avoir R et R studio sur votre machine
 - Téléchargez l'ensemble du projet depuis le [Répository R-Shiny](https://github.com/CeliaMarty/Projet-R-Shiny-)
 - Téléchargez le jeu de données via ce lien [Crime-Data](https://data.lacity.org/Public-Safety/Crime-Data-from-2020-to-Present/2nrs-mtv8/about_data)
