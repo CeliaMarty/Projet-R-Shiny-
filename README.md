@@ -9,6 +9,7 @@ Voici un aperçu de l'application :
 
 
 ## Comment exécuter l'application
+
 - Avoir R et R studio sur votre machine
 - Télécharger l'ensemble du projet depuis le [Répository R-Shiny](https://github.com/CeliaMarty/Projet-R-Shiny-)
 - Télécharger le jeu de données via ce lien [Crime-Data](https://data.lacity.org/Public-Safety/Crime-Data-from-2020-to-Present/2nrs-mtv8/about_data)
