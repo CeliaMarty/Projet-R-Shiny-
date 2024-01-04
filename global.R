@@ -12,7 +12,7 @@ head(data)
 
 summary(data)
 
-#On remarque que ça ne sert à rien d'utiliser les coloones suivantes car il y a trop de NA.
+#On remarque que ça ne sert à rien d'utiliser les colones suivantes car il y a trop de NA.
 #- crm.cd.1_NA
 #- weapon.Used.Cd_NA
 #- Crm.Cd.2_NA
