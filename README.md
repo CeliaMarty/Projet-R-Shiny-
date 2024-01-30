@@ -9,6 +9,7 @@ Voici un aperçu de l'application :
 
 
 ## Comment exécuter l'application
+
 - Avoir R et R studio sur votre machine
 - Télécharger l'ensemble du projet depuis le [Répository R-Shiny](https://github.com/CeliaMarty/Projet-R-Shiny-)
 - Télécharger le jeu de données via ce lien [Crime-Data](https://data.lacity.org/Public-Safety/Crime-Data-from-2020-to-Present/2nrs-mtv8/about_data)
@@ -34,4 +35,4 @@ Dans le menu déroulant sélectionnez un type de délit et dans la table intéra
 
 ## Remarques 
 - Dans l'onglet "Localisation" il y a uniquement les données de 2023 car sinon la carte serait trop surchargée et illisible.
-- Dans l'onglet "Type de délit" vous pouvez filtrer par type de délits dans le menu déroulant mais il y également une autre option de filtrage grâce à la barre de recherche située à droite, au dessus de la table. 
+- Dans l'onglet "Type de délit" vous pouvez filtrer par type de délits dans le menu déroulant mais il y également une autre option de filtrage grâce à la barre de recherche située à droite, au dessus de la table
