@@ -51,7 +51,7 @@ data_2023 <- data %>%
   filter(year(DATE.OCC) == 2023)
 
 # Affichage des données 
-cat("Nombre de délits en 2020:", nrow(data_2020),"/n")
+cat("Nombre de délits en 2020:", nrow(data_2020),"\n")
 cat("Nombre de délits en 2021:", nrow(data_2021), "\n")
 cat("Nombre de délits en 2022:", nrow(data_2022), "\n")
 cat("Nombre de délits en 2023:", nrow(data_2023), "\n")

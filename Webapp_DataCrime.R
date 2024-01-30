@@ -1,6 +1,6 @@
 #Inclusions des scripts R :
-source(file= "/Users/celiamarty/Desktop/R shinny/Projet-R-Shiny-/Packages.R")
-source(file= "/Users/celiamarty/Desktop/R shinny/Projet-R-Shiny-/global.R")
+source(file= "Packages.R")
+source(file= "global.R")
 
 
 #Interface utilisateur    

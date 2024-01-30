@@ -19,3 +19,8 @@ library(dplyr)
 # Tables de données interactives 
 library(DT)
 
+# Création de carte de chaleur
+library(leaflet.extras)
+
+#Pour changer de thèmes
+library(shinythemes)

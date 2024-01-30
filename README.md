@@ -15,7 +15,7 @@ Voici un aperçu de l'application :
 - Mettre le fichier dans un dossier DATA que vous créez
 - Ouvrir global.R, packages.R et Webapp_DataCrime.R
 - Modifier les chemins (1 sur global.R avec l'endroit où est placé le jeu de donées et 2 sur Webapp_DataCrime.R avec l'endroit où est placé le fichier packages et de même pour le fichier global)
-- Aller sur Webapp_DataCrime.R et appuyez sur Run App pour lancer l'application. 
+- Aller sur Webapp_DataCrime.R et appuyez sur Run App pour lancer l'application
   
 
 ## Fonctionnalités de l'Application
